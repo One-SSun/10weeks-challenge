@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin:0;
+  padding:0; 
+}
+
+
+body{
+  background-color: mintcream;
+}
+
+.main-first{
+  font-family: 'Poppins', sans-serif;
+  padding: 50px 0;
+  width:400px;
+  border-radius: 50px;
+  box-shadow:3px 3px 25px gray;
+}
+
+.header-first{
+  margin: 0 25px;
+  font-size:25px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.section-top{
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-thumbnail{
+  width:150px;
+  height:150px;
+  border-radius:75px; 
+}
+
+.info-title{
+  margin-top:40px;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.info-studio{
+  font-size:30px;
+  font-weight:bold;
+}
+
+.info-movie{
+  font-size:18px;
+  color:lightgray;
+  margin-top:20px;
+}
+
+.info-btn-group{
+  margin-top:40px;
+  display: flex;
+  justify-content: center;
+}
+
+.info-btn{
+  width:140px;
+  height:50px; 
+  border-radius:40px;
+  line-height:50px; 
+  text-align:center;
+}
+
+.btn-shuffle{
+  background-color:black;
+  margin-right:15px;
+  color:white; 
+}
+
+.btn-like{
+  background-color:green;
+}
+
+.btn-like i{
+  font-size:24px;
+}
+
+.playlist-group{
+  margin-top:40px;
+}
+
+.playlist-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  margin-bottom: 20px;
+}
+
+.playlist-img{
+  width:70px;
+  height:70px; 
+  border-radius:20px;
+}
+
+.playlist-info{
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+}
+
+.ost-movie{
+  font-size:14px;
+  color:lightgray;
+  margin-bottom:8px;
+}
+
+.ost-title{
+  font-size: 18px;
+}
+
+.section-bottom{
+  padding:0 25px; 
+}
+
+.play-drop-bar{
+  width: 100%;
+  background-color: green;
+  height: 70px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.bar-ost-info{
+  display:flex; 
+  flex-direction:column;
+}
+.bar-ost-movie{
+  font-size:14px;
+}
+
+.bar-ost-title{
+  font-size:18px;
+}

@@ -1,0 +1,63 @@
+body{margin:0;}
+
+/*animation*/
+@keyframes equalize{
+  0%{
+    transform:scaleY(1);
+  }50%{
+    transform:scaleY(1.8);
+  }100%{
+    transform:scaleY(1);
+  }
+};
+
+@keyframes rotateCircle{
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+};
+
+.aniBox{
+  display:flex; justify-content:center;
+}
+.squareBox{
+  margin-top:80px;
+}
+.circleBox{
+  animation: rotateCircle 2s linear;
+  animation-iteration-count: infinite;
+}
+
+.circle{
+  width:10px;
+  height:10px;
+  border-radius:5px; 
+  background:white;
+  display:inline-block;
+}
+.circle:nth-child(1){margin-right:25px;}
+.circle:nth-child(2){margin-right:25px;}
+
+.square{
+  width:10px;
+  height:40px;
+  background:white;
+  animation-name:equalize;
+  animation-duration:0.8s;
+  animation-timing-function:cubic-bazier(0.1, 0.6, 0.8, 0.1);
+  animation-iteration-count:infinite;
+  display:inline-block;
+  margin:0 3px 0 3px;
+}
+
+.bar1{animation-delay: 0s;}
+.bar2{animation-delay: 0.15s;}
+.bar3{animation-delay: 0.3s;}
+.bar4{animation-delay: 0.45s;}
+.bar5{animation-delay: 0.6s;}
+
+
+.boxWrap{position:relative; height:100vh; background:#6bbcbe; }
+.aniBoxContainer{position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
